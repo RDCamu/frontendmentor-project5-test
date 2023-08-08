@@ -1,0 +1,124 @@
+
+*, ::before, ::after {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+    line-height: 2.5ch;
+
+}
+
+.wrapper {
+    background-color: white;
+}
+
+h2 {
+    font-size: 36px;
+    margin-block: 12px; 
+    line-height: normal;   
+}
+
+.main {
+    padding: 24px;
+}
+
+.subtext {
+    margin-block: 12px;
+}
+
+.feature-container {
+    display: flex;
+    gap: 12px;
+    margin-block:12px;
+}
+
+.form-email {
+    margin-block-start: 28px;
+}
+
+.email-title {
+    font-size: 12px;
+    font-weight: bold;
+    /* margin-block: 8px; */
+}
+
+.email-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    margin-block: 8px;
+}
+
+.subscribe-btn {
+    margin-block: 20px;
+    width: 100%;
+    padding-block: 16px;
+    border-radius: 8px;
+    color: white;
+    background: hsl(235, 18%, 26%);
+    border:none;
+    font-weight: bold;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+
+}
+
+.image-container {
+    background-color: transparent;
+    width: 100%;
+    height: min(284px, 26vh);
+    border-collapse: separate;
+}
+
+
+
+@media (min-width:770px) {
+    body {
+        background-color: hsl(235, 18%, 26%);
+    }
+
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+
+    .wrapper {
+        width: 900px;
+        display: grid;
+        grid-template-areas: 
+        "main head-image";
+        grid-template-columns: 1fr 1fr;
+        padding: 24px;
+        border-radius: 40px;
+        column-gap: 24px;
+    }
+
+    .image-container {
+        grid-area: head-image;
+        height: 100%;
+    }
+
+    .image-container img {
+        border-radius: 16px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+
+}
