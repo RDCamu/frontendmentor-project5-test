@@ -12,6 +12,7 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
+  <script defer src="modal-mainscript.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -60,17 +61,21 @@
           </div>
         </div>
 
-        <div class="form-email">
+        <form class="form-email">
+
           <p class="email-title">
             Email address
           </p>
 
           <input type="email" class="js-email-input email-input" placeholder="email@company.com">
-        </div>
 
-        <button class="subscribe-btn js-subscribe-btn">
-          Subscribe to monthly newsletter
-        </button>
+
+          <button class="btn js-subscribe-btn" onclick="showSuccessModal(event)">
+            Subscribe to monthly newsletter
+          </button>
+
+        </form>
+
 
       </div>
 
@@ -81,11 +86,34 @@
 
   <!-- Success message start -->
 
+  <dialog class="success-modal">
+
+    <div class="modal-wrapper">
+
+      
+    <img src="assets/images/icon-success.svg" alt="">
+
+    <h2>Thanks for subscribing</h2>
+
+    <p>
+      A confirmation email has been sent to ash@loremcompany.com. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+
+    <form method="dialog">
+      <button class="btn"> Dismiss Message</button>
+    </form>
+
+
+    </div>
+
+    
+
+  </dialog>
+
   <!-- Thanks for subscribing!
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
+  
   Dismiss message -->
 
   <!-- Success message end -->

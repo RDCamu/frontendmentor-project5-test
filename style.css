@@ -52,7 +52,7 @@ h2 {
     margin-block: 8px;
 }
 
-.subscribe-btn {
+.btn {
     margin-block: 20px;
     width: 100%;
     padding-block: 16px;
@@ -61,6 +61,11 @@ h2 {
     background: hsl(235, 18%, 26%);
     border:none;
     font-weight: bold;
+}
+
+.btn:hover, .btn:focus-visible {
+    background-image: linear-gradient(to right, #ea4e6a, tomato);
+    box-shadow: 0 10px 20px rgb(255 99 71 / 0.7) ;
 }
 
 .image-container img{
@@ -80,6 +85,19 @@ h2 {
 }
 
 
+.success-modal {
+    margin: auto;
+    border: none;
+    padding: 24px;
+}
+
+.success-modal::backdrop {
+    background-color: white;
+}
+
+.modal-wrapper {
+
+}
 
 @media (min-width:770px) {
     body {
@@ -120,5 +138,26 @@ h2 {
         font-size: 48px;
     }
 
+    .success-modal {
+        margin: auto;
+        max-width: 50ch;
+        padding: 40px;
+        border-radius: 32px;
+        border: none;
+    }
+
+    .success-modal::backdrop {
+        background-color: hsl(235, 18%, 26%);
+    }
+
+    .modal-wrapper {
+        display: grid;
+        row-gap: 32px;
+    }
+
+    .success-modal h2 {
+        line-height: 1.8ch;
+        margin: 0;
+    }
 
 }
