@@ -86,16 +86,20 @@ h2 {
 
 
 .success-modal {
-    margin: auto;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
     border: none;
     padding: 24px;
 }
 
-.success-modal::backdrop {
-    background-color: white;
-}
 
 .modal-wrapper {
+    background-color: white;
+    padding: 32px;
+    border-radius: 48px;
+    width: 50ch;
 
 }
 
