@@ -95,13 +95,6 @@ h2 {
 }
 
 
-.modal-wrapper {
-    background-color: white;
-    padding: 32px;
-    border-radius: 48px;
-    width: 50ch;
-
-}
 
 .email-container {
     font-weight: bold;
@@ -112,6 +105,13 @@ h2 {
         background-color: hsl(235, 18%, 26%);
     }
 
+    .modal-wrapper {
+        background-color: white;
+        padding: 32px;
+        border-radius: 48px;
+        width: 50ch;
+    
+    }
 
     .container {
         width: 100vw;
