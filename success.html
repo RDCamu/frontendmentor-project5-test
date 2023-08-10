@@ -11,14 +11,13 @@
     <div class="success-modal">
 
         <div class="modal-wrapper">
-    
-            
+                
             <img src="assets/images/icon-success.svg" alt="">
         
             <h2>Thanks for subscribing</h2>
         
             <p>
-            A confirmation email has been sent to ash@loremcompany.com. 
+            A confirmation email has been sent to <span class="email-container"></span>. 
             Please open it and click the button inside to confirm your subscription.
             </p>
         
@@ -30,6 +29,13 @@
         </div>
     
     </div>
+
+    <script>
+        const emailSpan = document.querySelector('.email-container')
+        new URLSearchParams(window.location.search).forEach((value, name) =>  {
+            emailSpan.innerHTML = `${value}`
+        })
+    </script>
 
     
     

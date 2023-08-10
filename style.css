@@ -103,6 +103,10 @@ h2 {
 
 }
 
+.email-container {
+    font-weight: bold;
+}
+
 @media (min-width:770px) {
     body {
         background-color: hsl(235, 18%, 26%);
