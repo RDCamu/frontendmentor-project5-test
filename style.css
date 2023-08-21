@@ -52,6 +52,13 @@ h2 {
     margin-block: 8px;
 }
 
+.email-input:user-invalid {
+    background-color: hsla(4, 100%, 67%, 0.2);
+    border-color: hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%);
+}
+
+
 .btn {
     margin-block: 20px;
     width: 100%;
