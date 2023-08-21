@@ -32,10 +32,10 @@ Users should be able to:
 
 ### Screenshot of Solution
 
-[Desktop](./screenshot.jpg)
-[Desktop Active](./screenshot.jpg)
-[Desktop-Success-Active](./screenshot.jpg)
-[Mobile](./screenshot.jpg)
+[Desktop](./desktop.png)
+[Desktop Active](./desktop-active.png)
+[Desktop-Success-Active](./desktop-success-active.png)
+[Mobile](./mobile.png)
 
 ### Links
 
